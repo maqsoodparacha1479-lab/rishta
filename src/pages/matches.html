@@ -1,0 +1,59 @@
+<!--meta {
+  "title": "Find a Match | Rishta Trust Sample Proposals",
+  "description": "Browse sample matrimonial proposals from the Rishta Trust private database. Names, photos and contact details are shared privately, only with both families' consent.",
+  "nav": "matches"
+} -->
+    <section class="page-hero">
+      <div class="container">
+        <ol class="breadcrumb" aria-label="Breadcrumb"><li><a href="index.html">Home</a></li><li aria-current="page">Find a Match</li></ol>
+        <p class="eyebrow">Find a match</p>
+        <h1>Browse sample proposals</h1>
+        <p>A selection of listings from our private database. Registered families receive suitable proposals directly from their consultant.</p>
+      </div>
+    </section>
+
+    <section class="section section--tight" aria-label="Proposals">
+      <div class="container">
+        <form class="filter-panel" id="matchFilters" role="search" aria-label="Filter proposals">
+          <div class="field">
+            <label class="field__label" for="fGender">Show</label>
+            <select class="field__control" id="fGender">
+              <option value="">All profiles</option>
+              <option value="Female">Brides (female profiles)</option>
+              <option value="Male">Grooms (male profiles)</option>
+            </select>
+          </div>
+          <div class="field">
+            <label class="field__label" for="fAgeMin">Age from</label>
+            <input type="number" class="field__control" id="fAgeMin" min="18" max="70" inputmode="numeric" placeholder="18">
+          </div>
+          <div class="field">
+            <label class="field__label" for="fAgeMax">Age to</label>
+            <input type="number" class="field__control" id="fAgeMax" min="18" max="70" inputmode="numeric" placeholder="70">
+          </div>
+          <div class="field filter-panel__search">
+            <label class="field__label" for="fSearch">City, education or profession</label>
+            <input type="search" class="field__control" id="fSearch" placeholder="e.g. Faisalabad, doctor, UK" maxlength="60">
+          </div>
+          <button type="reset" class="btn btn-secondary">Clear</button>
+        </form>
+
+        <p class="results-count" id="matchCount" aria-live="polite"></p>
+
+        <div class="proposal-grid" id="matchGrid" data-reveal-stagger>
+          {{proposals:all}}
+        </div>
+
+        <div class="empty-state" id="matchEmpty" hidden>
+          <span class="empty-state__icon">{{icon:search}}</span>
+          <h2>No sample listings match these filters</h2>
+          <p>Our private database holds far more than we show here. Register and your consultant will search it for you.</p>
+          <div class="empty-state__actions">
+            <button type="button" class="btn btn-secondary btn-sm" data-match-reset>Clear filters</button>
+            <a href="registration.html" class="btn btn-primary btn-sm">Register</a>
+          </div>
+        </div>
+
+        <p class="privacy-note">{{icon:lock}} Listings never show names, photos or contact details. These are shared privately, and only when both families agree.</p>
+      </div>
+    </section>

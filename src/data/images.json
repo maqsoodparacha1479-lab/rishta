@@ -1,0 +1,50 @@
+{
+  "_note": "Image registry. Pages reference images by key ({{img:key}} or an article's \"image\"). To use real photography, replace src/srcset/size here and rebuild. status: 'demo' = placeholder illustration, safe to replace; 'owner' = supplied by the owner.",
+
+  "hero": {
+    "src": "assets/hero-736.jpg",
+    "srcset": "assets/hero-480.jpg 480w, assets/hero-736.jpg 736w",
+    "sizes": "(max-width: 900px) min(100vw - 2rem, 360px), 440px",
+    "width": 736, "height": 902,
+    "alt": "A bride and groom in traditional Pakistani wedding dress",
+    "eager": true,
+    "status": "owner",
+    "_licence": "Owner-supplied (original site). Licence and the couple's consent are unconfirmed; confirm or replace before launch. Master file: assets/hero-bg.jpg."
+  },
+
+  "family_meeting": {
+    "src": "assets/illustrations/family-meeting.svg", "width": 800, "height": 450,
+    "alt": "Illustration: tea and sweets set on a low table between two sofas, under a garlanded arch",
+    "status": "demo"
+  },
+  "verification": {
+    "src": "assets/illustrations/verification.svg", "width": 800, "height": 450,
+    "alt": "Illustration: an ID card and a document with a stamp, beside a shield with a check mark",
+    "status": "demo"
+  },
+  "privacy_photo": {
+    "src": "assets/illustrations/privacy-photo.svg", "width": 800, "height": 450,
+    "alt": "Illustration: a veiled, blurred photo frame with a padlock in front of it",
+    "status": "demo"
+  },
+  "support": {
+    "src": "assets/illustrations/support.svg", "width": 800, "height": 450,
+    "alt": "Illustration: a heart beneath a marigold garland, with oil lamps on either side",
+    "status": "demo"
+  },
+  "rings": {
+    "src": "assets/illustrations/rings.svg", "width": 800, "height": 450,
+    "alt": "Illustration: two interlinked gold rings resting on a cushion",
+    "status": "demo"
+  },
+  "registration": {
+    "src": "assets/illustrations/registration.svg", "width": 800, "height": 450,
+    "alt": "Illustration: a clipboard with a checklist, a pen and a receipt",
+    "status": "demo"
+  },
+  "journey": {
+    "src": "assets/illustrations/journey.svg", "width": 800, "height": 450,
+    "alt": "Illustration: stepping stones leading to a lit, garlanded doorway",
+    "status": "demo"
+  }
+}

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+# Set base_url in src/data/site.json and rebuild to add canonical URLs and sitemap.xml.

@@ -1,0 +1,218 @@
+<!--meta {
+  "title": "Register | Rishta Trust — One-Time Fee PKR 5,000",
+  "description": "Start your matrimonial journey with Rishta Trust. Send your details in five short steps. The one-time registration fee is PKR 5,000, confirmed and collected by your consultant, never online.",
+  "nav": "register",
+  "body_class": "no-footer-cta"
+} -->
+    <section class="page-hero page-hero--reg">
+      <div class="container reg-hero">
+        <div>
+          <ol class="breadcrumb" aria-label="Breadcrumb"><li><a href="index.html">Home</a></li><li aria-current="page">Registration</li></ol>
+          <p class="eyebrow">Registration</p>
+          <h1>Start your matrimonial journey</h1>
+          <p>Create your profile and take the first step towards finding a meaningful match.</p>
+        </div>
+        <div class="fee-panel fee-panel--hero">
+          <p class="fee-panel__label">Registration fee</p>
+          <p class="fee-panel__amount">{{fee.amount}}</p>
+          <p class="fee-panel__note">One-time registration</p>
+          <p class="fee-panel__small">{{icon:lock}} Paid to your consultant after they confirm your details. Never taken on this website.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight" aria-labelledby="included-title">
+      <div class="container reg-layout">
+        <!-- FORM -->
+        <div class="reg-card" id="register">
+          <ol class="stepper" id="regStepper" aria-label="Registration progress">
+            <li class="stepper__item" data-step-indicator="1"><span class="stepper__num">01</span><span class="stepper__label">Details</span></li>
+            <li class="stepper__item" data-step-indicator="2"><span class="stepper__num">02</span><span class="stepper__label">Contact</span></li>
+            <li class="stepper__item" data-step-indicator="3"><span class="stepper__num">03</span><span class="stepper__label">Profile</span></li>
+            <li class="stepper__item" data-step-indicator="4"><span class="stepper__num">04</span><span class="stepper__label">Review</span></li>
+            <li class="stepper__item" data-step-indicator="5"><span class="stepper__num">05</span><span class="stepper__label">Send</span></li>
+          </ol>
+
+          <noscript><p class="form-note">{{icon:info}} This form needs JavaScript. You can also register on WhatsApp or by visiting one of our branches — see the <a href="contact.html">Contact page</a>.</p></noscript>
+
+          <form id="registrationForm" novalidate>
+            <!-- STEP 1 -->
+            <fieldset class="reg-step" data-step="1">
+              <h2 class="reg-step__title" tabindex="-1">Personal information</h2>
+              <p class="reg-step__intro">Tell us who is being registered. Parents and guardians are welcome to register on a candidate’s behalf, with their consent.</p>
+              <div class="form-grid">
+                <div class="field field--full">
+                  <label class="field__label" for="regName">Candidate’s full name <span class="req" aria-hidden="true">*</span></label>
+                  <input type="text" class="field__control" id="regName" autocomplete="name" maxlength="80" required aria-describedby="regName-error">
+                  <p class="field__error" id="regName-error" aria-live="polite"></p>
+                </div>
+                <div class="field">
+                  <label class="field__label" for="regFor">Registering for <span class="req" aria-hidden="true">*</span></label>
+                  <select class="field__control" id="regFor" required aria-describedby="regFor-error">
+                    <option value="">Select</option>
+                    <option>Myself</option>
+                    <option>My son</option>
+                    <option>My daughter</option>
+                    <option>My brother</option>
+                    <option>My sister</option>
+                    <option>Another relative</option>
+                  </select>
+                  <p class="field__error" id="regFor-error" aria-live="polite"></p>
+                </div>
+                <div class="field">
+                  <label class="field__label" for="regGender">Candidate’s gender <span class="req" aria-hidden="true">*</span></label>
+                  <select class="field__control" id="regGender" required aria-describedby="regGender-error">
+                    <option value="">Select</option>
+                    <option>Female</option>
+                    <option>Male</option>
+                  </select>
+                  <p class="field__error" id="regGender-error" aria-live="polite"></p>
+                </div>
+                <div class="field">
+                  <label class="field__label" for="regAge">Age <span class="req" aria-hidden="true">*</span></label>
+                  <input type="number" class="field__control" id="regAge" min="18" max="70" inputmode="numeric" required aria-describedby="regAge-error">
+                  <p class="field__error" id="regAge-error" aria-live="polite"></p>
+                </div>
+                <div class="field">
+                  <label class="field__label" for="regStatus">Marital status <span class="req" aria-hidden="true">*</span></label>
+                  <select class="field__control" id="regStatus" required aria-describedby="regStatus-error">
+                    <option value="">Select</option>
+                    <option>Single / Unmarried</option>
+                    <option>Divorced</option>
+                    <option>Widowed</option>
+                  </select>
+                  <p class="field__error" id="regStatus-error" aria-live="polite"></p>
+                </div>
+                <div class="field field--full">
+                  <label class="field__label" for="regCity">City / country of residence <span class="req" aria-hidden="true">*</span></label>
+                  <input type="text" class="field__control" id="regCity" placeholder="e.g. Faisalabad, or Manchester, UK" autocomplete="address-level2" maxlength="80" required aria-describedby="regCity-error">
+                  <p class="field__error" id="regCity-error" aria-live="polite"></p>
+                </div>
+              </div>
+              <div class="reg-step__nav">
+                <span></span>
+                <button type="button" class="btn btn-primary" data-step-next>Continue {{icon:arrow}}</button>
+              </div>
+            </fieldset>
+
+            <!-- STEP 2 -->
+            <fieldset class="reg-step" data-step="2">
+              <h2 class="reg-step__title" tabindex="-1">Contact details</h2>
+              <p class="reg-step__intro">Your consultant will contact you on this number to confirm your details. We will never ask you for a password, OTP code or card details.</p>
+              <div class="form-grid">
+                <div class="field">
+                  <label class="field__label" for="regPhone">WhatsApp / mobile number <span class="req" aria-hidden="true">*</span></label>
+                  <input type="tel" class="field__control" id="regPhone" placeholder="0323-0000000" autocomplete="tel" inputmode="tel" required aria-describedby="regPhone-error">
+                  <p class="field__error" id="regPhone-error" aria-live="polite"></p>
+                </div>
+                <div class="field">
+                  <label class="field__label" for="regEmail">Email <span class="field__optional">(optional)</span></label>
+                  <input type="email" class="field__control" id="regEmail" autocomplete="email" maxlength="120" aria-describedby="regEmail-error">
+                  <p class="field__error" id="regEmail-error" aria-live="polite"></p>
+                </div>
+                <div class="field field--full">
+                  <label class="field__label" for="regOffice">Preferred consultant <span class="req" aria-hidden="true">*</span></label>
+                  <select class="field__control" id="regOffice" required>
+                    {{offices:options}}
+                  </select>
+                  <p class="field__hint">Lahore, Islamabad, Karachi and overseas families: choose Faisalabad (head office) for now.</p>
+                </div>
+              </div>
+              <div class="reg-step__nav">
+                <button type="button" class="btn btn-secondary" data-step-back>{{icon:left}} Back</button>
+                <button type="button" class="btn btn-primary" data-step-next>Continue {{icon:arrow}}</button>
+              </div>
+            </fieldset>
+
+            <!-- STEP 3 -->
+            <fieldset class="reg-step" data-step="3">
+              <h2 class="reg-step__title" tabindex="-1">Profile information</h2>
+              <p class="reg-step__intro">Just the basics for now. Your consultant completes the full profile with your family at the registration sitting.</p>
+              <div class="form-grid">
+                <div class="field">
+                  <label class="field__label" for="regEducation">Education <span class="req" aria-hidden="true">*</span></label>
+                  <input type="text" class="field__control" id="regEducation" placeholder="e.g. MBBS, BS Computer Science" maxlength="100" required aria-describedby="regEducation-error">
+                  <p class="field__error" id="regEducation-error" aria-live="polite"></p>
+                </div>
+                <div class="field">
+                  <label class="field__label" for="regProfession">Profession <span class="req" aria-hidden="true">*</span></label>
+                  <input type="text" class="field__control" id="regProfession" placeholder="e.g. Doctor, Teacher, Business" maxlength="100" required aria-describedby="regProfession-error">
+                  <p class="field__error" id="regProfession-error" aria-live="polite"></p>
+                </div>
+                <div class="field field--full">
+                  <label class="field__label" for="regAbout">About the candidate <span class="field__optional">(optional)</span></label>
+                  <textarea class="field__control" id="regAbout" rows="4" maxlength="400" aria-describedby="regAbout-hint" placeholder="A few lines about the candidate and what the family is looking for."></textarea>
+                  <p class="field__hint" id="regAbout-hint">Up to 400 characters. Please don’t include CNIC numbers or other ID details here.</p>
+                </div>
+              </div>
+              <div class="reg-step__nav">
+                <button type="button" class="btn btn-secondary" data-step-back>{{icon:left}} Back</button>
+                <button type="button" class="btn btn-primary" data-step-next>Review {{icon:arrow}}</button>
+              </div>
+            </fieldset>
+
+            <!-- STEP 4 -->
+            <fieldset class="reg-step" data-step="4">
+              <h2 class="reg-step__title" tabindex="-1">Review your details</h2>
+              <p class="reg-step__intro">Check everything before you continue. You can go back to make changes.</p>
+              <dl class="summary" id="regSummary"></dl>
+              <div class="summary-fee">
+                <span>{{icon:receipt}} Registration fee</span>
+                <strong>{{fee.amount}} <small>one-time</small></strong>
+              </div>
+              <div class="field field--check">
+                <input type="checkbox" id="regConsent" required aria-describedby="regConsent-error">
+                <label for="regConsent">I agree to the <a href="terms.html" target="_blank" rel="noopener">Terms &amp; Conditions</a> and <a href="privacy.html" target="_blank" rel="noopener">Privacy Policy</a>, and I have the candidate’s consent to register.</label>
+                <p class="field__error" id="regConsent-error" aria-live="polite"></p>
+              </div>
+              <div class="reg-step__nav">
+                <button type="button" class="btn btn-secondary" data-step-back>{{icon:left}} Back</button>
+                <button type="submit" class="btn btn-primary">Continue to send {{icon:arrow}}</button>
+              </div>
+            </fieldset>
+          </form>
+
+          <!-- STEP 5 -->
+          <div class="reg-done" id="regDone" hidden>
+            <span class="reg-done__icon">{{icon:send}}</span>
+            <h2 class="reg-step__title" tabindex="-1" id="regDoneTitle">Send your details to your consultant</h2>
+            <p>Your registration is <strong>not complete yet</strong>. Press the button below to open WhatsApp with your details filled in, then press send.</p>
+            <a class="btn btn-whatsapp btn-lg btn-block" id="regWhatsApp" href="contact.html" target="_blank" rel="noopener">{{icon:whatsapp}} <span id="regWhatsAppLabel">Open WhatsApp</span></a>
+            <h3>What happens next</h3>
+            <ol class="next-steps">
+              <li>Your consultant replies on WhatsApp or calls you to confirm your details and number.</li>
+              <li>They arrange your registration sitting and explain how to pay the {{fee.amount}} fee.</li>
+              <li>You receive an official receipt, and your profile is screened before matching begins.</li>
+            </ol>
+            <button type="button" class="btn btn-text" id="regRestart">{{icon:edit}} Edit my details</button>
+          </div>
+        </div>
+
+        <!-- SIDEBAR -->
+        <aside class="reg-aside" aria-labelledby="included-title">
+          <figure class="illus illus--aside">{{img:registration}}</figure>
+          <div class="aside-card">
+            <h2 id="included-title">What’s included</h2>
+            <ul class="check-list">
+              <li>{{icon:check}} A registration sitting with a senior consultant</li>
+              <li>{{icon:check}} Profile screening before your profile is shared</li>
+              <li>{{icon:check}} Matching from our private database</li>
+              <li>{{icon:check}} Proposals shared only when both families agree</li>
+              <li>{{icon:check}} Coordinated family introductions and follow-up</li>
+              <li>{{icon:check}} An official receipt for your payment</li>
+            </ul>
+            <p class="aside-card__note">Identity and document verification is available with your authorization. Your consultant will explain what it involves.</p>
+          </div>
+          <div class="aside-card aside-card--quiet">
+            <h2>How payment works</h2>
+            <p>This website does not take payments. After your consultant confirms your details, they will explain the payment options and issue an official receipt.</p>
+            <p><strong>We will never ask for card details, OTP codes or passwords</strong> by phone, WhatsApp or email.</p>
+          </div>
+          <div class="aside-card aside-card--quiet">
+            <h2>Prefer to talk first?</h2>
+            <p>Our consultants are happy to answer questions before you register.</p>
+            <button type="button" class="btn btn-whatsapp btn-block" data-open-modal="branchModal">{{icon:whatsapp}} Chat on WhatsApp</button>
+          </div>
+        </aside>
+      </div>
+    </section>

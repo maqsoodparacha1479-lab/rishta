@@ -1,0 +1,47 @@
+  <div class="top-strip">
+    <div class="container">
+      <div class="top-strip__tagline">
+        <span class="urdu" lang="ur">قابلِ اعتماد رشتہ سروس — فیصل آباد</span>
+        <span>Confidential · Family-focused · Consent-based</span>
+      </div>
+      <div class="top-strip__contacts">
+        {{offices:strip}}
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header" id="header">
+    <div class="container">
+      <nav class="nav" aria-label="Main">
+        <a href="index.html" class="brand" aria-label="Rishta Trust — home">
+          <span class="brand__mark">{{icon:heart}}</span>
+          <span>
+            <span class="brand__name">Rishta Trust</span>
+            <span class="brand__tag">Matrimonial Consultancy</span>
+          </span>
+        </a>
+
+        <ul class="nav__menu">
+          {{nav:desktop}}
+        </ul>
+
+        <div class="nav__actions">
+          <button type="button" class="nav__wa" data-open-modal="branchModal" aria-label="Chat with a consultant on WhatsApp">{{icon:whatsapp}}</button>
+          <a href="registration.html" class="btn btn-primary btn-sm nav__cta">Register</a>
+          <button type="button" class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+            <span class="nav__toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav">
+      <ul class="mobile-nav__list">
+        {{nav:mobile}}
+      </ul>
+      <div class="mobile-nav__cta">
+        <a href="registration.html" class="btn btn-primary btn-lg">Register — {{fee.amount}}</a>
+        <button type="button" class="btn btn-whatsapp btn-lg" data-open-modal="branchModal">{{icon:whatsapp}} Chat on WhatsApp</button>
+      </div>
+    </div>
+  </header>

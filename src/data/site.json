@@ -1,0 +1,68 @@
+{
+  "name": "Rishta Trust",
+  "slogan": "Family aur Aapki Pasand",
+  "slogan_urdu": "قابلِ اعتماد طریقے سے",
+  "_slogan_note": "Owner-approved slogans. The Urdu spelling is taken verbatim from the original site (قابلِ with ق and zer). Its glyphs are already in the Urdu font subset in src/partials/head.html.",
+  "base_url": "",
+  "_base_url_note": "Set to the live domain, e.g. https://www.example.pk (no trailing slash). The build then adds canonical URLs, absolute social-image URLs and sitemap.xml.",
+
+  "fee": {
+    "amount": "PKR 5,000",
+    "label": "One-time registration fee"
+  },
+
+  "branch_cities": "Lahore, Faisalabad, Rahim Yar Khan, Islamabad and Karachi",
+  "_offices_note": "Branches in display order. A branch with \"pending\": true has no published contact details yet: it is listed by city only, never used for WhatsApp routing, forms, footer contacts or structured data. To publish one, remove \"pending\" and add consultant, initials, address, phones, wa, wa_greeting, email and map_query like the complete entries.",
+  "default_office": "faisalabad",
+  "offices": [
+    { "id": "lahore", "city": "Lahore", "badge": "Branch", "pending": true },
+    {
+      "id": "faisalabad",
+      "city": "Faisalabad",
+      "strip_label": "Faisalabad",
+      "badge": "Head office",
+      "consultant": "Muhammad Nadeem",
+      "initials": "MN",
+      "address": "Chenab Market, Susan Road, Madina Town, Faisalabad",
+      "short_address": "Chenab Market, Susan Road, Madina Town, Faisalabad",
+      "phones": [{ "display": "0323-0785312", "tel": "+923230785312" }],
+      "wa": "923230785312",
+      "wa_greeting": "Assalam-o-Alaikum Nadeem Sahab (Rishta Trust Faisalabad)",
+      "email": "mnb2761175@gmail.com",
+      "map_query": "Chenab Market, Susan Road, Madina Town, Faisalabad"
+    },
+    {
+      "id": "khanpur",
+      "city": "Rahim Yar Khan",
+      "strip_label": "Khanpur",
+      "locality": "Khanpur",
+      "badge": "Regional office · Khanpur",
+      "consultant": "Rana Zahid Mahmood",
+      "initials": "RZ",
+      "address": "House No. 4, Main Street, Afshan Town, Khanpur, Dist. Rahim Yar Khan",
+      "short_address": "House No. 4, Main Street, Afshan Town, Khanpur, Dist. RYK",
+      "phones": [{ "display": "0345-8025750", "tel": "+923458025750" }, { "display": "0300-7808842", "tel": "+923007808842" }],
+      "wa": "923458025750",
+      "wa_greeting": "Assalam-o-Alaikum Zahid Sahab (Rishta Trust Khanpur)",
+      "email": "mr.ranazahid786@gmail.com",
+      "map_query": "Afshan Town, Khanpur, Rahim Yar Khan"
+    },
+    { "id": "islamabad", "city": "Islamabad", "badge": "Branch", "pending": true },
+    { "id": "karachi", "city": "Karachi", "badge": "Branch", "pending": true }
+  ],
+
+  "nav": [
+    { "key": "home", "label": "Home", "href": "index.html" },
+    { "key": "about", "label": "About", "href": "about.html" },
+    { "key": "how", "label": "How It Works", "href": "how-it-works.html" },
+    { "key": "matches", "label": "Find a Match", "href": "matches.html" },
+    { "key": "stories", "label": "Success Stories", "href": "success-stories.html" },
+    { "key": "news", "label": "News", "href": "news.html" }
+  ],
+
+  "news_categories": {
+    "announcements": "Announcement",
+    "process": "Our process",
+    "privacy": "Trust & privacy"
+  }
+}

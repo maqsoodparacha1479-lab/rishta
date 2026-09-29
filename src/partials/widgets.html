@@ -1,0 +1,56 @@
+  <div class="fab-stack">
+    <button type="button" class="fab fab--top" id="backToTop" aria-label="Back to top">{{icon:up}}</button>
+    <button type="button" class="fab fab--help" id="helpToggle" aria-expanded="false" aria-controls="helpPopover" aria-label="Help">
+      {{icon:help}}
+      <span class="fab__tip" aria-hidden="true">Need help?</span>
+    </button>
+    <a class="fab fab--whatsapp" href="{{wa:faisalabad:Assalam-o-Alaikum Rishta Trust, I need consultation.}}" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp (opens WhatsApp)">
+      {{icon:whatsapp}}
+      <span class="fab__tip" aria-hidden="true">Chat with us</span>
+    </a>
+  </div>
+
+  <div class="help-popover" id="helpPopover" role="dialog" aria-modal="false" aria-labelledby="helpTitle">
+    <div class="help-popover__head">
+      <h2 id="helpTitle">How can we help?</h2>
+      <p>Choose an option below.</p>
+    </div>
+    <ul class="help-popover__list">
+      <li><a class="help-item" href="faq.html" data-help-close><span class="help-item__icon">{{icon:book}}</span><span><strong>FAQs</strong><span>Registration, fee, privacy</span></span></a></li>
+      <li><a class="help-item" href="contact.html" data-help-close><span class="help-item__icon">{{icon:headset}}</span><span><strong>Contact support</strong><span>Send a message to a consultant</span></span></a></li>
+      <li><button type="button" class="help-item" data-open-modal="branchModal" data-help-close><span class="help-item__icon help-item__icon--wa">{{icon:whatsapp}}</span><span><strong>WhatsApp</strong><span>Chat with a consultant</span></span></button></li>
+      <li><a class="help-item" href="mailto:mnb2761175@gmail.com?subject=Website%20problem%20report" data-help-close><span class="help-item__icon">{{icon:flag}}</span><span><strong>Report a problem</strong><span>Email the head office</span></span></a></li>
+    </ul>
+    <p class="help-popover__foot">Messages are answered by our senior consultants.</p>
+  </div>
+
+  <div class="modal" id="branchModal" role="dialog" aria-modal="true" aria-labelledby="branchTitle">
+    <div class="modal__panel">
+      <button type="button" class="modal__close" data-modal-close aria-label="Close">{{icon:x}}</button>
+      <span class="modal__icon modal__icon--wa">{{icon:whatsapp}}</span>
+      <h2 id="branchTitle">Chat on WhatsApp</h2>
+      <p class="modal__text">Choose the consultant nearest to you. Families in Lahore, Islamabad and Karachi can message the Faisalabad head office until those branches’ numbers are published.</p>
+      <div class="modal__actions">
+        <a class="modal__choice" href="{{wa:faisalabad}}" target="_blank" rel="noopener">
+          {{icon:whatsapp}}
+          <span><strong>Muhammad Nadeem</strong><span>Faisalabad · 0323-0785312</span></span>
+          <svg class="icon icon--arrow"><use href="#i-arrow"/></svg>
+        </a>
+        <a class="modal__choice" href="{{wa:khanpur}}" target="_blank" rel="noopener">
+          {{icon:whatsapp}}
+          <span><strong>Rana Zahid Mahmood</strong><span>Khanpur / RYK · 0345-8025750</span></span>
+          <svg class="icon icon--arrow"><use href="#i-arrow"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="confirmationModal" role="dialog" aria-modal="true" aria-labelledby="confirmTitle" aria-describedby="modalMessage">
+    <div class="modal__panel">
+      <button type="button" class="modal__close" data-modal-close aria-label="Close">{{icon:x}}</button>
+      <span class="modal__icon modal__icon--wa">{{icon:whatsapp}}</span>
+      <h2 id="confirmTitle">Your message is ready</h2>
+      <p class="modal__text" id="modalMessage">Open WhatsApp to review it and press send. Nothing is sent until you do.</p>
+      <div class="modal__actions" id="waButtonContainer"></div>
+    </div>
+  </div>

@@ -1,0 +1,63 @@
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-cta">
+        <div>
+          <p class="eyebrow">Begin with a conversation</p>
+          <h2>One registration. One fee. A consultant who knows your family.</h2>
+        </div>
+        <div class="footer-cta__actions">
+          <a href="registration.html" class="btn btn-gold btn-lg">Register — {{fee.amount}}</a>
+          <a href="contact.html" class="btn btn-ghost-light btn-lg">Contact us</a>
+        </div>
+      </div>
+
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand" aria-label="Rishta Trust — home">
+            <span class="brand__mark">{{icon:heart}}</span>
+            <span class="brand__name">Rishta Trust</span>
+          </a>
+          <p class="footer-slogan" lang="ur-Latn">{{slogan}}</p>
+          <p class="urdu" lang="ur">{{slogan_urdu}}</p>
+          <p>A matrimonial consultancy offering confidential, family-involved matchmaking with branches in {{branch_cities}}, for families in Pakistan and overseas.</p>
+        </div>
+        <nav aria-labelledby="f-company">
+          <h2 class="footer-heading" id="f-company">Company</h2>
+          <ul class="footer-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="matches.html">Find a Match</a></li>
+            <li><a href="success-stories.html">Success Stories</a></li>
+            <li><a href="news.html">News</a></li>
+          </ul>
+        </nav>
+        <nav aria-labelledby="f-support">
+          <h2 class="footer-heading" id="f-support">Support</h2>
+          <ul class="footer-links">
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><button type="button" class="footer-link-btn" data-open-help>Help</button></li>
+          </ul>
+        </nav>
+        <nav aria-labelledby="f-legal">
+          <h2 class="footer-heading" id="f-legal">Legal</h2>
+          <ul class="footer-links">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+            <li><a href="safety.html">Safety</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h2 class="footer-heading">Connect</h2>
+          <div class="footer-contact">
+            {{offices:footer}}
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© {{year}} Rishta Trust. All rights reserved.</p>
+        <p>Registration fee: {{fee.amount}}, one-time.</p>
+      </div>
+    </div>
+  </footer>

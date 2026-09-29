@@ -1,0 +1,90 @@
+<!--meta {
+  "title": "Contact | Rishta Trust — Branches in Lahore, Faisalabad, Rahim Yar Khan, Islamabad & Karachi",
+  "description": "Contact Rishta Trust by WhatsApp, email or at our branches in Lahore, Faisalabad, Rahim Yar Khan, Islamabad and Karachi. Send a message to a senior consultant.",
+  "nav": "contact"
+} -->
+    <section class="page-hero">
+      <div class="container">
+        <ol class="breadcrumb" aria-label="Breadcrumb"><li><a href="index.html">Home</a></li><li aria-current="page">Contact</li></ol>
+        <p class="eyebrow">Contact</p>
+        <h1>Talk to a consultant</h1>
+        <p>Questions before registering, help with an existing registration, or anything else. We’re happy to help.</p>
+      </div>
+    </section>
+
+    <section class="section section--tight" aria-labelledby="form-title">
+      <div class="container callback">
+        <div class="callback__card reveal">
+          <h2 id="form-title" class="card-title">Send us a message</h2>
+          <form id="contactForm" novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <label class="field__label" for="cName">Your name <span class="req" aria-hidden="true">*</span></label>
+                <input type="text" class="field__control" id="cName" autocomplete="name" maxlength="80" required aria-describedby="cName-error">
+                <p class="field__error" id="cName-error" aria-live="polite"></p>
+              </div>
+              <div class="field">
+                <label class="field__label" for="cPhone">Phone / WhatsApp <span class="req" aria-hidden="true">*</span></label>
+                <input type="tel" class="field__control" id="cPhone" placeholder="0323-0000000" autocomplete="tel" inputmode="tel" required aria-describedby="cPhone-error">
+                <p class="field__error" id="cPhone-error" aria-live="polite"></p>
+              </div>
+              <div class="field">
+                <label class="field__label" for="cEmail">Email <span class="field__optional">(optional)</span></label>
+                <input type="email" class="field__control" id="cEmail" autocomplete="email" maxlength="120" aria-describedby="cEmail-error">
+                <p class="field__error" id="cEmail-error" aria-live="polite"></p>
+              </div>
+              <div class="field">
+                <label class="field__label" for="cOffice">Consultant <span class="req" aria-hidden="true">*</span></label>
+                <select class="field__control" id="cOffice" required aria-describedby="cOffice-hint">
+                  {{offices:options}}
+                </select>
+                <p class="field__hint" id="cOffice-hint">Lahore, Islamabad and Karachi: choose Faisalabad (head office) until those branches’ details are published.</p>
+              </div>
+              <div class="field field--full">
+                <label class="field__label" for="cMessage">Message <span class="req" aria-hidden="true">*</span></label>
+                <textarea class="field__control" id="cMessage" rows="5" maxlength="600" required aria-describedby="cMessage-error"></textarea>
+                <p class="field__error" id="cMessage-error" aria-live="polite"></p>
+              </div>
+            </div>
+            <p class="form-note">{{icon:lock}}<span>Nothing is stored on this website. Sending opens WhatsApp (or your email app) with your message filled in, so you can review it first.</span></p>
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Send message {{icon:arrow}}</button>
+          </form>
+        </div>
+
+        <aside class="contact-aside reveal">
+          <div class="aside-card">
+            <h2>Chat on WhatsApp</h2>
+            <p>The quickest way to reach a consultant.</p>
+            <button type="button" class="btn btn-whatsapp btn-block" data-open-modal="branchModal">{{icon:whatsapp}} Choose a consultant</button>
+          </div>
+          <div class="aside-card aside-card--quiet">
+            <h2>Email</h2>
+            <ul class="contact-list">
+              <li>{{icon:mail}}<span><small>Faisalabad head office</small><a href="mailto:mnb2761175@gmail.com">mnb2761175@gmail.com</a></span></li>
+              <li>{{icon:mail}}<span><small>Khanpur &amp; RYK office</small><a href="mailto:mr.ranazahid786@gmail.com">mr.ranazahid786@gmail.com</a></span></li>
+            </ul>
+          </div>
+          <div class="aside-card aside-card--quiet">
+            <h2>Report a concern</h2>
+            <p>To report a profile or a safety concern, see our <a href="safety.html">Safety page</a> or email the head office.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section--cream" aria-labelledby="offices-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Our branches</p>
+          <h2 id="offices-title">Visit us</h2>
+          <p>We have branches in {{branch_cities}}.</p>
+        </div>
+        {{offices:list}}
+        <div class="office-grid" data-reveal-stagger>
+          {{offices:cards}}
+        </div>
+        <div class="office-grid office-grid--pending" data-reveal-stagger>
+          {{offices:pending}}
+        </div>
+      </div>
+    </section>

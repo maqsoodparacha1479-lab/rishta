@@ -1,0 +1,34 @@
+<!--meta {
+  "title": "News & Insights | Rishta Trust",
+  "description": "Guidance, relationship insights and updates from the Rishta Trust team on registration, verification, privacy and family matchmaking.",
+  "nav": "news"
+} -->
+    <section class="news-hero" aria-labelledby="news-hero-title">
+      <div class="container news-hero__grid">
+        <div class="news-hero__copy">
+          <ol class="breadcrumb" aria-label="Breadcrumb"><li><a href="index.html">Home</a></li><li aria-current="page">News &amp; Insights</li></ol>
+          <p class="eyebrow hero-anim hero-anim--1">News &amp; insights</p>
+          <h1 class="hero-anim hero-anim--2" id="news-hero-title">Thoughtful guidance for <em>meaningful relationships.</em></h1>
+          <p class="hero-anim hero-anim--3">Guidance, relationship insights and updates from our team.</p>
+        </div>
+        <div class="news-hero__art hero-anim hero-anim--3" aria-hidden="true">
+          <span class="arch arch--1"></span><span class="arch arch--2"></span><span class="arch arch--3"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight" aria-label="Articles">
+      <div class="container">
+        <div class="filter-bar" role="group" aria-label="Filter articles by category" data-news-filter>{{news:chips}}</div>
+        <p class="visually-hidden" id="newsStatus" aria-live="polite"></p>
+        <div class="news-grid news-grid--page">
+          {{news:all}}
+        </div>
+        <div class="empty-state" id="newsEmpty" hidden>
+          <span class="empty-state__icon">{{icon:book}}</span>
+          <h2>No articles here yet</h2>
+          <p>There are no articles in this category at the moment.</p>
+          <div class="empty-state__actions"><button type="button" class="btn btn-secondary btn-sm" data-filter-reset>Show all articles</button></div>
+        </div>
+      </div>
+    </section>
